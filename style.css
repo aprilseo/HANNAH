@@ -1,0 +1,234 @@
+body {
+    overflow: hidden;
+    color: rgb(217, 217, 217);
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    height: 100vh;
+    width: 100vw;
+    cursor: url('cursor2.png'), auto;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+.cross-grid-background {
+    position: fixed; /* Change to fixed to keep it relative to the viewport */
+    margin: 0;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #121212;
+    color:rgb(207, 207, 207);
+    background-image:
+        linear-gradient(45deg, grey 1px, transparent 1px), /* Diagonal lines from top-left to bottom-right */
+        linear-gradient(-45deg, grey 1px, transparent 1px); /* Diagonal lines from top-right to bottom-left */
+    background-size: 50px 50px; /* Adjust grid size to your preference */
+    pointer-events: none; /* Prevents the grid from blocking interactions */
+    z-index: -1; /* Ensure it stays behind other content */
+}
+
+.container {
+    display: flex;
+    gap: 30px; /* Adjusts spacing between elements */
+}
+
+.section{
+    display:flex;
+    padding:1rem;
+    width:200px;
+    top:0px;
+    left:50px;
+    padding:1rem;
+    font-size: 75px;
+    font-style:italic;
+}
+
+.text{
+    display:flex;
+    padding:1rem;
+    padding-top:2rem;
+    background-color:grey;
+    width:400px;
+    position:absolute;
+    top:10px;
+    left:250px;
+}
+
+.section2{
+    display:flex;
+    padding:1rem;
+    padding-left:2.5rem;
+    font-size: 75px;
+    font-style:italic;
+    width:150px;
+
+    top:150px;
+    left:400px;
+    
+}
+
+.text2{
+    display:flex;
+    padding:1rem;
+    padding-top:2rem;
+    background-color:grey;
+    width:500px;
+    position:absolute;
+    top:300px;
+    left:350px;
+}
+
+.section3{
+    display:flex;
+    padding:1rem;
+    padding-left:2.5rem;
+    font-size: 75px;
+    font-style:italic;
+    width:150px;
+    top:250px;
+    left:650px;
+    
+}
+
+.text3{
+    display:flex;
+    padding:1rem;
+    padding-top:2rem;
+    background-color:grey;
+    width:500px;
+    position:absolute;
+    top:450px;
+    left:500px;
+}
+
+.section4{
+    display:flex;
+    padding:1rem;
+    padding-left:2rem;
+    font-size: 75px;
+    font-style:italic;
+    width:150px;
+    top:500px;
+    left:500px;
+    
+}
+
+.text4{
+    display:flex;
+    padding:1rem;
+    padding-top:2rem;
+    background-color:grey;
+    width:500px;
+    position:absolute;
+    top:600px;
+    left:650px;
+}
+
+.section5{
+    display:flex;
+    padding:1rem;
+    padding-left:2rem;
+    font-size: 75px;
+    font-style:italic;
+    width:300px;
+    top:550px;
+    left:700px;
+    
+}
+
+.text5{
+    display:flex;
+    padding:1rem;
+    padding-top:2rem;
+    background-color:grey;
+    width:500px;
+    position:absolute;
+    top:550px;
+    left:1000px;
+}
+
+.section6{
+    display:flex;
+    padding:1rem;
+    padding-left:2rem;
+    font-size: 75px;
+    font-style:italic;
+    width:300px;
+    top:700px;
+    left:1100px;
+    
+}
+
+.text6{
+    display:flex;
+    padding:1rem;
+    padding-top:2rem;
+    background-color:grey;
+    width:500px;
+    position:absolute;
+    top:700px;
+    left:1000px;
+}
+
+.text, .text2, .text3, .text4, .text5, .text6 {
+    display: none; /* Initially hidden */
+    position: absolute;
+    padding: 15px;
+    color:rgb(217, 217, 217);
+    cursor: move;
+    z-index:2;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgba(128, 128, 128, 0.5);
+
+    
+}
+
+
+.section, .section2, .section3, .section4, .section5, .section6 {
+    font-size: 100px;
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto; /* Adjusts width dynamically */
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.section:hover, 
+.section2:hover, 
+.section3:hover, 
+.section4:hover, 
+.section5:hover, 
+.section6:hover {
+    text-decoration: underline;
+}
+
+.credits{
+    position:absolute;
+    bottom:1rem;
+    text-align: center;
+    font-family: monospace;
+    text-transform: uppercase;
+
+}
+
+.quote{
+    font-family: monospace;
+    text-transform: uppercase;
+    position:absolute;
+    top:1rem;
+    text-align: center;
+
+}
